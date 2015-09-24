@@ -1,0 +1,16 @@
+﻿@model daniel_incident_tracking.Models.Report
+@using (Html.BeginForm("Report", "Home", FormMethod.Post))
+{
+    <br \ />
+    <h3>New Incident Report</h3>
+    @:Name : @Html.TextBoxFor(m => m.name)
+    <br \ />
+    @:Location : @Html.TextBoxFor(m => m.location)
+    <br \ />
+    @:Incident : @Html.TextBoxFor(m => m.incident)
+    <br \ />
+    <br \ />
+        <input type="submit" value="Submit" />
+}
+
+
