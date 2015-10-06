@@ -26,7 +26,8 @@ namespace daniel_incident_tracking.Controllers
         [HttpPost]
         public ActionResult Report(Report newReport)
         {
-            return Content("Received Username: " + newReport.name + "   Location: " + newReport.location + "   Incident: " + newReport.incident + "   Witness: " + newReport.witness + "   Supervisor: " + newReport.supervisor + "   Date: " + newReport.date);
+            return Content("Received Username: " + newReport.name + "   Location: " + newReport.location + "   Incident: " + newReport.incident + "   Witness: " + newReport.witness + "   Supervisor: " + newReport.supervisor + "   Date: " + newReport.date + "  Contributing Factor: " + newReport.contribFactor + "    Notification (Name/Position): " + newReport.notifName + "   Report on (Client/Staff) : " + newReport.victimName);
+     
         }
     }
 }

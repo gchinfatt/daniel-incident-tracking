@@ -14,5 +14,12 @@ namespace daniel_incident_tracking.Models
         public string date { get; set; }
         public string supervisor { get; set; }
 
+        //Gina
+        public string contribFactor { get; set; }
+
+        public string notifName { get; set; }
+
+        public string victimName { get; set; }
+
     }
 }
