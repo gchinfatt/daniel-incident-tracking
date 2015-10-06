@@ -10,5 +10,9 @@ namespace daniel_incident_tracking.Models
         public string name { get; set; }
         public string location { get; set; }
         public string incident { get; set; }
+        public string witness { get; set; }
+        public string date { get; set; }
+        public string supervisor { get; set; }
+
     }
 }
