@@ -1,0 +1,31 @@
+﻿@model daniel_incident_tracking.Models.Report
+@using (Html.BeginForm("Report", "Home", FormMethod.Post))
+{
+    <br \ />
+    <h3>New Incident Report</h3>
+    @:Name (Prepared By) : @Html.TextBoxFor(m => m.name)
+    <br \ />
+    @:Location (of incident occurence) : @Html.TextBoxFor(m => m.location)
+    <br \ />
+    @:Incident (Nature of Incident) : @Html.TextBoxFor(m => m.incident)
+    <br \ />
+    @:Witness(es) Name(s) : @Html.TextBoxFor(m => m.witness)
+    <br \ />
+    @:Supervisor (Dept. Director or Residential Manager) : @Html.TextBoxFor(m => m.supervisor)
+    <br \ />
+    @:Date (of Incident) : @Html.TextBoxFor(m => m.date)
+    <br \ />
+
+
+    /* Gina */
+    @:Contributing Factors : @Html.TextBoxFor(m => m.contribFactor)
+    <br \ />
+    @:Notification (Name/Position) : @Html.TextBoxFor(m => m.notifName)
+    <br \ />
+    @:Report on (Victim name - Client/Staff) : @Html.TextBoxFor(m => m.victimName)
+    <br \ />
+
+        <input type="submit" value="Submit" />
+}
+
+
